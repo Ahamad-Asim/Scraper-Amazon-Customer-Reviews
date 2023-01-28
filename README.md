@@ -1,4 +1,4 @@
-# Scraper-Customer-Reviews
+## Scraper-Customer-Reviews
 
 This Scrapy script is used for crawling products and scraping customer reviews. 
 
@@ -9,9 +9,6 @@ This Scrapy script is used for crawling products and scraping customer reviews.
 * The script can be easily modified to extract customer reviews from any product page by changing the <strong>'start_urls'</strong> and <strong>'allowed_domains'</strong> and the respective css or xpath selectors. 
 * The script is a great tool for collecting data on customer reviews for any product's.</p>
 <br>
-<br>
-<br>
-
 
 ## Usage
 
@@ -21,11 +18,11 @@ To use this script, you'll need to have Scrapy installed. You can install it by 
 2. Insert the product link in the `start_urls` variable.
 3. Change the CSS selectors in the `parse_item` function to match the structure of the website you are scraping.
 4. Run the script using the command `scrapy runspider CommSpider.py`
-<br>
-<br>
-You can also specify a file to export the data in json or csv format by running the script with 
+
+You can also specify a file to export the data in json or csv format by running the script with  
 `scrapy runspider news.py -o filename.json` or `scrapy runspider news.py -o filename.csv`. 
 
+<br>
 
 ## Application
 
