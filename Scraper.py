@@ -20,10 +20,10 @@ class CommSpider(CrawlSpider):
         
         
     def parse_item(self, response):
-        
-        star=response.css('.review-rating>span.a-icon-alt::text').extract()                # css selectors for the star rating
-        name=response.css('#cm_cr-review_list .a-profile-name::text').extract()            # css selectors for the customer name
-        review=response.css('.a-text-bold span::text').extract()                           # css selectors for the customer review
+                                                                                           # change  css according to your site
+        star=response.css('.review-rating>span.a-icon-alt::text').extract()                # example css selectors for the star rating
+        name=response.css('#cm_cr-review_list .a-profile-name::text').extract()            # example css selectors for the customer name
+        review=response.css('.a-text-bold span::text').extract()                           # example css selectors for the customer review
         
         
         combined = [{'star': s, 'name': n, 'review': r} for s, n, r in zip(star, name, review)]
