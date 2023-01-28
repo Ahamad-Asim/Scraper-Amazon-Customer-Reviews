@@ -13,17 +13,21 @@ This Scrapy script is used for crawling products and scraping customer reviews.
 <br>
 
 
-__Usage__
+## Usage
 
-After giving <strong>'start_urls'</strong>, <strong>'allowed_domains'</strong>  and the respective css or xpath selectors. run the file using scrapy
-in terminal it can be run by
+To use this script, you'll need to have Scrapy installed. You can install it by running `pip install scrapy`.
 
-```scrapy runspider scraper.py```
-
+1. Insert the allowed domain(s) in the `allowed_domains` variable.
+2. Insert the product link in the `start_urls` variable.
+3. Change the CSS selectors in the `parse_item` function to match the structure of the website you are scraping.
+4. Run the script using the command `scrapy runspider CommSpider.py`
 <br>
 <br>
+You can also specify a file to export the data in json or csv format by running the script with 
+`scrapy runspider news.py -o filename.json` or `scrapy runspider news.py -o filename.csv`. 
 
-__Application__
+
+## Application
 
 * Sentiment Analysis: The customer reviews and star ratings can be used to analyze the overall sentiment of customers towards a specific product.
 
