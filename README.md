@@ -16,7 +16,7 @@ Usage
 After giving start_urls', 'allowed_domains' and the respective css or xpath selectors. run the file using scrapy
 in terminal it can be run by
 
-
+```scrapy runspider scraper.py```
 
 Application
 
