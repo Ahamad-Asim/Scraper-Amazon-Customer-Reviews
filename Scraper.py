@@ -6,7 +6,7 @@ from scrapy.spiders import CrawlSpider, Rule
 class CommSpider(CrawlSpider):
     name = 'customer review'
     allowed_domains = ['']                                      #insert the allowed domain's here
-    start_urls = ['']                                           #insert the amazon product link inside the quotes
+    start_urls = ['']                                           #insert the product link inside the quotes
 
 
     le_all_reviews = LinkExtractor(restrict_css=['#reviews-medley-footer .a-text-bold', 'li.a-last>a'])     #you can change the css you want to target here
